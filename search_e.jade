@@ -1,0 +1,437 @@
+extend ./layout.jade
+block vars
+	- var title='Grocery Hub - Search'
+	- var bodyClass = 'pg-search pg-interna'
+block content
+	include popups
+	div.ads
+		.wrap
+			img(src="./assets/freeshipping.png",alt="Free Shipping")
+	#breadcrumbs
+		.wrap
+			a(href="index.php",title="Home") Home
+			a(href="#",title="Tesco") Tesco
+			a(href="#",title="Go Green") Go Green
+			a(href="#",title="Organic") Organic
+	#content
+		.wrap.flex.stretch
+			aside
+				p 
+					strong FILTER BY
+				form#search
+					p
+						strong Search
+					input(placeholder="Search type here")
+					button 
+						i.search <!-- -->
+				div.filter
+					p.c
+						strong.b.l Lifestyle 
+						i.b.r.material-icons.arrow-down &#xE5C5;
+					ul
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label
+								i.organic.categories Organic
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label
+								i.halal.categories Halal
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label
+								i.low-fat.categories Low Fat
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label
+								i.local.categories Local
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label
+								i.gluten-free.categories Gluten Free	
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label
+								i.kosher.categories Kosher
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label
+								i.low-sugar.categories Low Sugar
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label
+								i.bundled.categories Bundled
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label
+								i.for-fasting.categories For Fasting
+				div.filter
+					p.c
+						strong.b.l Categories 
+						i.b.r.material-icons.arrow-down &#xE5C5;
+					ul
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label Bakery
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label Fresh
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label Frozen
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label Ready Meals
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label Food Cupboard
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label Drinks
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label Baby
+				div.filter
+					p.c
+						strong.b.l Cuisine 
+						i.b.r.material-icons.arrow-down &#xE5C5;
+				div.filter
+					p.c
+						strong.b.l Shops 
+						i.b.r.material-icons.arrow-down &#xE5C5;
+					ul
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label Tesco
+						li
+							input.checkbox-custom(type="checkbox") 
+							label.checkbox-custom-label Waltrose	
+				.ads
+					img(src="./assets/fresh_juice.jpg")
+			div
+				#searchResults
+					.head
+						h3 Search Results
+							span 10 results
+					.sort
+						i.material-icons.arrow-down &#xE5C5;
+						select
+							option Sort by name
+							option Sort by relevance
+					.products
+						p.response No results found matching your criteria. Reduce your search options and try again.
+				#featured
+					.head
+						h3 Featured
+					.sort
+						i.material-icons.arrow-down &#xE5C5;
+						select
+							option Sort by name
+							option Sort by relevance
+					.slide
+						.carousel.products
+							ul.slides
+								li
+									.product(id="product1")
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+				#new-products
+					.head
+						h3 New Products
+					.sort
+						i.material-icons.arrow-down &#xE5C5;
+						select
+							option Sort by name
+							option Sort by relevance		
+					.slide
+						.carousel.products
+							ul.slides
+								li
+									.product(id="product1")
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+								li
+									.product
+										img(src="./assets/product_thumb_p.jpg")
+										p Tasco Organic (400g)
+										p
+											span 
+												strong Tasco
+											span 
+												strong $1.00
+											span 
+												strong Waltrose
+											span 
+												strong $1.30
+											small 20p/100g
+										a(class="btn btn_4") Add to Cart
+										p
+											span
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+												i.leaf <!-- -->
+											span
+												small 25 Reviews
+			aside
+				.ads
+					img(src="./assets/fresh_juice.jpg")
+				.ads
+					img(src="./assets/florida_natural.jpg")

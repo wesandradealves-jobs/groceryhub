@@ -1,0 +1,157 @@
+extend ./layout.jade
+block vars
+	- var title='Grocery Hub - My Account'
+	- var bodyClass = 'pg-myAccount pg-interna'
+block content
+	#breadcrumbs
+		.wrap
+			a(href="index.php",title="Home") Home
+			a(href="my-account.php",title="My Account") My Account
+	#content
+		.wrap.flex.stretch
+			aside
+				.ads
+					img(src="./assets/fresh_juice.jpg")
+			div
+				#tabs
+					ul.tabs
+						li.active
+							a(href="javascript:void(0)",title="Credentials") Credentials	
+						li
+							a(href="javascript:void(0)",title="Purchase History") Purchase History	
+						li
+							a(href="javascript:void(0)",title="Shopping List") Shopping List	
+						li
+							a(href="javascript:void(0)",title="Nutrition History") Nutrition History	
+						li
+							a(href="javascript:void(0)",title="Favourites") Favourites	
+					div
+						div(data-value="Credentials")
+							h3 Sign in
+							form(name="signin").flex
+								span.flex100
+									input(placeholder="Login")
+								span.flex100
+									input(placeholder="Password",type="password")
+								span.flex100
+									button.btn.btn_4 Login
+								span.flex50
+									a(href="javascript:void(0)",class="btn btn_login btn_facebook")
+										i.zocial-facebook 
+										span Login with Facebook
+								span.flex50
+									a(href="javascript:void(0)",class="btn btn_login btn_gplus")
+										i.zocial-googleplus 
+										span Login with Google +
+								span.flex100
+									p
+										a(href="javascript:void(0)",title="Forgot Password?") Forgot Password?
+							h3 Sign in now
+								span Not a member yet?
+							form(name="signup").flex
+								span.flex50
+									input(placeholder="First Name")
+								span.flex50
+									input(placeholder="Last Name")
+								span.flex70
+									input(placeholder="Address")
+								span.flex30
+									input(placeholder="Zip code")
+								span.flex60
+									input(placeholder="Email")
+								span.flex60
+									input(placeholder="Password")
+								span.flex60
+									input(placeholder="Confirm Login")
+								span.flex60
+									button.btn.btn_4 Register
+						div(data-value="Purchase History")
+							h3 Purchase History
+							ul.table
+								li
+									ul
+										li ID
+											i.material-icons.r &#xE5C5;
+										li Invoice Number
+											i.material-icons.r &#xE5C5;
+										li Status
+											i.material-icons.r &#xE5C5;
+										li Total Value
+											i.material-icons.r &#xE5C5;
+										li Date
+											i.material-icons.r &#xE5C5;
+								li
+									ul
+										li 45646123164
+										li INVOOO44564
+										li Completed
+										li $23,00
+										li 01/11/2017
+								li
+									ul
+										li 45646123164
+										li INVOOO44564
+										li Completed
+										li $23,00
+										li 01/11/2017
+								li
+									ul
+										li 45646123164
+										li INVOOO44564
+										li Completed
+										li $23,00
+										li 01/11/2017
+								li
+									ul
+										li 45646123164
+										li INVOOO44564
+										li Completed
+										li $23,00
+										li 01/11/2017
+								li
+									ul
+										li 45646123164
+										li INVOOO44564
+										li Completed
+										li $23,00
+										li 01/11/2017
+								li
+									ul
+										li 45646123164
+										li INVOOO44564
+										li Completed
+										li $23,00
+										li 01/11/2017
+								li
+									ul
+										li 45646123164
+										li INVOOO44564
+										li Completed
+										li $23,00
+										li 01/11/2017
+								li
+									ul
+										li 45646123164
+										li INVOOO44564
+										li Completed
+										li $23,00
+										li 01/11/2017
+								li
+									ul
+										li 45646123164
+										li INVOOO44564
+										li Completed
+										li $23,00
+										li 01/11/2017
+							ul.pagination
+								li
+									a(href="javascript:void(0)") 1
+								li
+									a(href="javascript:void(0)") 2
+								li
+									a(href="javascript:void(0)") 3			
+			aside
+				.ads
+					img(src="./assets/fresh_juice.jpg")
+				.ads
+					img(src="./assets/florida_natural.jpg")

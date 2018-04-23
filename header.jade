@@ -1,0 +1,42 @@
+.circles#opaque <!-- -->
+.circles#green <!-- -->
+#header
+	.wrap.flex
+		div.flex50
+			a(rel="home",href="index.php",title="Groceryhub") <!-- -->
+		div.flex50
+			nav
+				ul
+					li
+						a(href="#",title="Products") Products
+					li
+						a(href="my-account.php",title="My Account") My Account
+					li
+						a(href="my-account.php",title="Login",class="btn btn_default") Login
+					li
+						ul#lang
+							li
+								i.flag-icon.flag-icon-us
+								a(href="?lang=en",title="EN") EN	
+								i.material-icons &#xE5C5;
+							li
+								ul
+									li#FR
+										i.flag-icon.flag-icon-fr
+										a(href="?lang=FR",title="FR") FR
+									li.active#EN
+										i.flag-icon.flag-icon-us
+										a(href="?lang=EN",title="EN") EN
+									li#DE
+										i.flag-icon.flag-icon-de
+										a(href="?lang=DE",title="DE") DE
+									li#CH
+										i.flag-icon.flag-icon-ch
+										a(href="?lang=CH",title="CH") CH
+									li#JP
+										i.flag-icon.flag-icon-jp
+										a(href="?lang=JP",title="JP") JP			
+					li
+						a#cart(href="javascript:void(0)",title="My Cart")
+							i.material-icons &#xE8CC;
+								small 3

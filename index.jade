@@ -1,0 +1,38 @@
+extend ./layout.jade
+block vars
+	- var title='Grocery Hub - Home'
+	- var bodyClass = 'pg-home'
+block content
+	section#webdoor
+		.wrap
+			img(src="assets/ico.png",title="GroceryHUB")
+			h1 Eat Fresh, Live Better
+			h2 Organic, Natural, Sustainable
+			form
+				input(type="text",placeholder="Enter postcode")
+				button.btn.btn_1 start searching
+	section#what-is-this-site-doing-and-why
+		.wrap.flex
+			.flex50
+				img(src="assets/basket.png")
+			.flex50
+				h2 What is this site doing and why
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	section#saving
+		.wrap.flex
+			.flex50
+				img(src="assets/save-money.png")
+				h2 Save Money
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				a(href="",title="Save Money",class="btn btn_2") Save Money
+			.flex50
+				img(src="assets/save-time.png")
+				h2 Save Time
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				a(href="",title="Save Time",class="btn btn_2") Save Time 
+	section#for-retailers
+		.wrap.flex
+			.flex50
+				h2 For Retailers
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				a(href="",title="Online Store",class="btn btn_3") Online Store
